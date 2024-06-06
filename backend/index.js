@@ -1,4 +1,5 @@
 import express from 'express';
+import path from 'path';
 
 const app = express();
 
@@ -10,6 +11,14 @@ app.get('/api', (req, res) => {
 );
 
 app.use('/api/users', require('./routes/users'));
+
+app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../frontend/dist", "index.html"), err => {
+        if (err) {
+            console.log(err);
+        }
+    });
+});
 
 app.listen(3000, () => {
     console.log('Server is listening on port 3000');
