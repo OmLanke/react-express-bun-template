@@ -13,6 +13,6 @@ This template provides a minimal setup to get React working in Vite with Express
     - Frontend - `bun run dev` (acessible through port `5173`) 
     - Backend - `bun run backend` (accessible through port `3000`)
 - ### Build and Run
-    - `bun run buildrun`
+    - `bun run server`
     
     - Website will now be available at <http://localhost:3000/>

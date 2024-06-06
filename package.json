@@ -7,7 +7,7 @@
     "dev": "bunx --bun vite",
     "backend": "bun backend/index.js",
     "build": "bunx --bun vite build",
-    "buildrun": "bunx --bun vite build && bun backend/index.js",
+    "server": "bunx --bun vite build && bun backend/index.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "bunx --bun vite preview"
   },
